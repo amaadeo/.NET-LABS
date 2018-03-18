@@ -1,0 +1,10 @@
+C:\Users\ama5\source\repos\Zabawki\Zabawki\bin\Debug\Zabawki.exe.config
+C:\Users\ama5\source\repos\Zabawki\Zabawki\bin\Debug\Zabawki.exe
+C:\Users\ama5\source\repos\Zabawki\Zabawki\bin\Debug\Zabawki.pdb
+C:\Users\ama5\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.csprojResolveAssemblyReference.cache
+C:\Users\ama5\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.Form1.resources
+C:\Users\ama5\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.Properties.Resources.resources
+C:\Users\ama5\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.csproj.GenerateResource.cache
+C:\Users\ama5\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.csproj.CoreCompileInputs.cache
+C:\Users\ama5\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.exe
+C:\Users\ama5\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.pdb

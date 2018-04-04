@@ -9,14 +9,33 @@ namespace Zabawki
     class Car : IAccelerate
     {
         public string name;
+        public int speed;
 
         public Car(string name)
         {
             this.name = name + "(Car)";
         }
 
-        public int speed { get; private set; } = 0;
-  
+        public int Speed
+        {
+            get
+            {
+                return speed;
+            }
+
+            set
+            {
+                speed = value;
+            }
+        }
+
+        //public int speed { get; set; } = 0;
+
+        /* public int getSpeed()
+         {
+             return speed;
+         }*/
+
         public void Accelerate(int amount)
         {
             this.speed = amount;

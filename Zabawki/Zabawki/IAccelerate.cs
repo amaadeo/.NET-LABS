@@ -8,7 +8,7 @@ namespace Zabawki
 {
     interface IAccelerate
     {
-        int speed { get; }
+        int Speed { get; set; }
         void Accelerate(int amount);
     }
 }

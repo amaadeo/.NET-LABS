@@ -8,3 +8,12 @@ C:\Users\ama5\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.csproj.GenerateReso
 C:\Users\ama5\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.csproj.CoreCompileInputs.cache
 C:\Users\ama5\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.exe
 C:\Users\ama5\source\repos\Zabawki\Zabawki\obj\Debug\Zabawki.pdb
+C:\Users\pnet-54\Desktop\.NET-LABS-master\Zabawki\Zabawki\bin\Debug\Zabawki.exe.config
+C:\Users\pnet-54\Desktop\.NET-LABS-master\Zabawki\Zabawki\obj\Debug\Zabawki.exe
+C:\Users\pnet-54\Desktop\.NET-LABS-master\Zabawki\Zabawki\obj\Debug\Zabawki.pdb
+C:\Users\pnet-54\Desktop\.NET-LABS-master\Zabawki\Zabawki\bin\Debug\Zabawki.exe
+C:\Users\pnet-54\Desktop\.NET-LABS-master\Zabawki\Zabawki\bin\Debug\Zabawki.pdb
+C:\Users\pnet-54\Desktop\.NET-LABS-master\Zabawki\Zabawki\obj\Debug\Zabawki.csprojResolveAssemblyReference.cache
+C:\Users\pnet-54\Desktop\.NET-LABS-master\Zabawki\Zabawki\obj\Debug\Zabawki.Form1.resources
+C:\Users\pnet-54\Desktop\.NET-LABS-master\Zabawki\Zabawki\obj\Debug\Zabawki.Properties.Resources.resources
+C:\Users\pnet-54\Desktop\.NET-LABS-master\Zabawki\Zabawki\obj\Debug\Zabawki.csproj.GenerateResource.Cache

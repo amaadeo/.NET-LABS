@@ -8,7 +8,7 @@ namespace Zabawki
 {
     interface IRise
     {
-        int altitude { get; }
+        int Altitude { get; set; }
         void Rise(int amount);
     }
 }

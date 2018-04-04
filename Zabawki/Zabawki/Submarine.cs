@@ -9,20 +9,44 @@ namespace Zabawki
     class Submarine : IDive, IAccelerate
     {
         public string name;
+        public int speed;
+        public int submersion;
 
         public Submarine(string name)
         {
             this.name = name + "(Submarine)";
         }
 
-        public int submersion { get; private set; } = 0;
-
         public void Dive(int amount)
         {
             this.submersion = amount;
         }
 
-        public int speed { get; private set; } = 0;
+        public int Speed
+        {
+            get
+            {
+                return speed;
+            }
+
+            set
+            {
+                speed = value;
+            }
+        }
+
+        public int Submersion
+        {
+            get
+            {
+                return submersion;
+            }
+
+            set
+            {
+                submersion = value;
+            }
+        }
 
         public void Accelerate(int amount)
         {

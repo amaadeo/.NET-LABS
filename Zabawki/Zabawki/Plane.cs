@@ -9,20 +9,44 @@ namespace Zabawki
     class Plane : IRise, IAccelerate
     {
         public string name;
+        public int speed;
+        public int altitude;
 
         public Plane(string name)
         {
             this.name = name + "(Plane)";
         }
 
-        public int altitude { get; private set; } = 0;
-
         public void Rise(int amount)
         {
             this.altitude = amount;
         }
 
-        public int speed { get; private set; } = 0;
+        public int Speed
+        {
+            get
+            {
+                return speed;
+            }
+
+            set
+            {
+                speed = value;
+            }
+        }
+
+        public int Altitude
+        {
+            get
+            {
+                return altitude;
+            }
+
+            set
+            {
+                altitude = value;
+            }
+        }
 
         public void Accelerate(int amount)
         {

@@ -76,70 +76,35 @@ namespace Zabawki
         {
             object toy = selectedList.SelectedItem;
 
-            //CAR
-            if (toy is IAccelerate && !(toy is IRise) && !(toy is IDive))
-            {
-                Car car = toy as Car;
-                speedLabel.Text = car.speed.ToString();
-                depthLabel.Text = "0";
-                altitudeLabel.Text = "0";
+            speedLabel.Text = "0";
+            depthLabel.Text = "0";
+            altitudeLabel.Text = "0";
 
+            speedTable.Enabled = false;
+            depthTable.Enabled = false;
+            altitudeTable.Enabled = false;
+
+            if (toy is IAccelerate)
+            {
+                IAccelerate accelerate = toy as IAccelerate;
+                speedLabel.Text = accelerate.Speed.ToString();
                 speedTable.Enabled = true;
-                depthTable.Enabled = false;
-                altitudeTable.Enabled = false;
             }
-        
-            //SUBMARINE
-            else if (toy is IAccelerate && toy is IDive)
-            {
-                Submarine sub = toy as Submarine;
-                
-                speedLabel.Text = sub.speed.ToString();
-                depthLabel.Text = sub.submersion.ToString();
-                altitudeLabel.Text = "0";
 
-                speedTable.Enabled = true;
+            if (toy is IDive)
+            {
+                IDive dive = toy as IDive;
+                depthTable.Text = dive.Submersion.ToString();
                 depthTable.Enabled = true;
-                altitudeTable.Enabled = false;
             }
 
-            //PLANE
-            else if (toy is IAccelerate && toy is IRise)
+            if (toy is IRise)
             {
-                Plane plane = toy as Plane;
-
-                speedLabel.Text = plane.speed.ToString();
-                altitudeLabel.Text = plane.altitude.ToString();
-                depthLabel.Text = "0";
-
-                speedTable.Enabled = true;
-                depthTable.Enabled = false;
+                IRise rise = toy as IRise;
+                altitudeTable.Text = rise.Altitude.ToString();
                 altitudeTable.Enabled = true;
             }
-
-            else
-            {
-                speedLabel.Text = "0";
-                altitudeLabel.Text = "0";
-                depthLabel.Text = "0";
-                speedTable.Enabled = false;
-                depthTable.Enabled = false;
-                altitudeTable.Enabled = false;
-            }
-
-            
         }
-
-        /*int FindMyStringInList(ListBox lb, string searchString)
-        {
-            for (int i = 0; i < lb.Items.Count; ++i)
-            {
-                string lbString = lb.Items[i].ToString();
-                if (lbString.ToString().Equals(searchString))
-                    return 1;
-            }
-            return -1;
-        }*/
 
         private void speedUpButton_Click(object sender, EventArgs e)
         {
@@ -147,9 +112,9 @@ namespace Zabawki
 
             IAccelerate accelerate = toy as IAccelerate;
 
-            accelerate.Accelerate(accelerate.speed + 1);
+            accelerate.Accelerate(accelerate.Speed + 1);
 
-            speedLabel.Text = accelerate.speed.ToString();
+            speedLabel.Text = accelerate.Speed.ToString();
         }
 
         private void speedDownButton_Click(object sender, EventArgs e)
@@ -158,11 +123,11 @@ namespace Zabawki
 
             IAccelerate accelerate = toy as IAccelerate;
 
-            if (accelerate.speed > 0)
+            if (accelerate.Speed > 0)
             {
-                accelerate.Accelerate(accelerate.speed - 1);
+                accelerate.Accelerate(accelerate.Speed - 1);
 
-                speedLabel.Text = accelerate.speed.ToString();
+                speedLabel.Text = accelerate.Speed.ToString();
             }
         }
 
@@ -172,11 +137,11 @@ namespace Zabawki
 
             IDive dive = toy as IDive;
 
-            if (dive.submersion > 0)
+            if (dive.Submersion > 0)
             {
-                dive.Dive(dive.submersion - 1);
+                dive.Dive(dive.Submersion - 1);
 
-                depthLabel.Text = dive.submersion.ToString();
+                depthLabel.Text = dive.Submersion.ToString();
             }
         }
 
@@ -186,9 +151,9 @@ namespace Zabawki
 
             IDive dive = toy as IDive;
 
-            dive.Dive(dive.submersion + 1);
+            dive.Dive(dive.Submersion + 1);
 
-            depthLabel.Text = dive.submersion.ToString();
+            depthLabel.Text = dive.Submersion.ToString();
         }
 
         private void altitudeDownButton_Click(object sender, EventArgs e)
@@ -197,11 +162,11 @@ namespace Zabawki
 
             IRise rise = toy as IRise;
 
-            if (rise.altitude > 0)
+            if (rise.Altitude > 0)
             {
-                rise.Rise(rise.altitude - 1);
+                rise.Rise(rise.Altitude - 1);
 
-                altitudeLabel.Text = rise.altitude.ToString();
+                altitudeLabel.Text = rise.Altitude.ToString();
             }
 
         }
@@ -212,9 +177,9 @@ namespace Zabawki
 
             IRise rise = toy as IRise;
 
-            rise.Rise(rise.altitude + 1);
+            rise.Rise(rise.Altitude + 1);
 
-            altitudeLabel.Text = rise.altitude.ToString();
+            altitudeLabel.Text = rise.Altitude.ToString();
         }
     }
 }
